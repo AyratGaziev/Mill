@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+}
+#blades {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: blades 2s 2s infinite linear;
+}
+@keyframes blades {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+#mill_body {
+    transform-box: fill-box;
+    transform-origin: bottom;
+    animation: mill_body 2s linear;
+}
+@keyframes mill_body {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+.sunflower {
+    transform-box: fill-box;
+    transform-origin: bottom;
+    animation: sunflower 5s linear;
+}
+@keyframes sunflower {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+#clouds2 {
+    transform-box: fill-box;
+    transform-origin: bottom;
+    animation: clouds2 30s linear infinite;
+}
+@keyframes clouds2 {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-90px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+#clouds1 {
+    transform-box: fill-box;
+    transform-origin: bottom;
+    animation: clouds1 30s linear infinite;
+}
+@keyframes clouds1 {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(90px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
